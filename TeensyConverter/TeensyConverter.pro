@@ -1,4 +1,4 @@
-update=11/03/2017 16:19:01
+update=11/03/2017 16:24:24
 version=1
 last_client=kicad
 [pcbnew]
@@ -29,7 +29,7 @@ version=1
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=D:/pcbs/CE_Header/lib/ce_header
+LibName1=D:/pcbs/CE_Header/CE_Header/lib/ce_header
 LibName2=lib/teensy-32
 LibName3=power
 LibName4=device

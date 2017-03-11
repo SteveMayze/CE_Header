@@ -30,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:TeensyConverter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,12 +48,12 @@ $EndDescr
 $Comp
 L Teensy-3.2 U?
 U 1 1 58C4153D
-P 2750 3450
-F 0 "U?" H 2900 3200 60  0000 C CNN
-F 1 "Teensy-3.2" H 2625 4625 60  0000 C CNN
-F 2 "" H 2525 3125 60  0001 C CNN
-F 3 "" H 2525 3125 60  0001 C CNN
-	1    2750 3450
+P 3050 3350
+F 0 "U?" H 3200 3100 60  0000 C CNN
+F 1 "Teensy-3.2" H 2925 4525 60  0000 C CNN
+F 2 "" H 2825 3025 60  0001 C CNN
+F 3 "" H 2825 3025 60  0001 C CNN
+	1    3050 3350
 	1    0    0    -1  
 $EndComp
 $Comp
