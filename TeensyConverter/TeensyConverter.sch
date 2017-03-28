@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:TeensyConverter-rescue
 LIBS:ce_header
 LIBS:teensy-32
 LIBS:power
@@ -49,12 +48,12 @@ $EndDescr
 Text Label 6550 2500 2    60   ~ 0
 PWR_IO
 $Comp
-L CONN_01X03 P101
+L CONN_01X03 P1
 U 1 1 58C417C7
 P 5750 2500
-F 0 "P101" H 5750 2700 50  0000 C CNN
+F 0 "P1" H 5750 2700 50  0000 C CNN
 F 1 "CONN_01X03" V 5850 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5750 2500 60  0001 C CNN
+F 2 "TeencyConverter:Pin_Header_Straight_1x03_Pitch2.54mm" H 5750 2500 60  0001 C CNN
 F 3 "" H 5750 2500 60  0000 C CNN
 	1    5750 2500
 	-1   0    0    -1  
@@ -79,7 +78,7 @@ Text Label 4000 4150 0    60   ~ 0
 SPI_MOSI
 Text Label 6550 2900 2    60   ~ 0
 SPI_CLK
-Text Label 2200 4300 2    60   ~ 0
+Text Label 2200 4250 2    60   ~ 0
 SPI_CLK
 Text Label 8550 2700 0    60   ~ 0
 SPI_MISO
@@ -90,32 +89,10 @@ SPI_CS
 Text Label 4000 4000 0    60   ~ 0
 SPI_CS
 $Comp
-L CE_Header U102
-U 1 1 58D750A7
-P 7550 3300
-F 0 "U102" H 8250 2100 60  0000 C CNN
-F 1 "CE_Header" H 7550 4400 60  0000 C CNN
-F 2 "TeencyConverter:CE_Header" H 7150 3700 60  0001 C CNN
-F 3 "" H 7150 3700 60  0000 C CNN
-	1    7550 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Teensy-3.2 U101
-U 1 1 58D756B3
-P 3150 3350
-F 0 "U101" H 3150 3400 60  0000 C CNN
-F 1 "Teensy-3.2" H 2975 4525 60  0000 C CNN
-F 2 "TeencyConverter:Teensy-32" H 2875 3025 60  0001 C CNN
-F 3 "" H 2875 3025 60  0001 C CNN
-	1    3150 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R101
+L R R1
 U 1 1 58D8069B
 P 5750 3100
-F 0 "R101" V 5830 3100 50  0000 C CNN
+F 0 "R1" V 5830 3100 50  0000 C CNN
 F 1 "R" V 5750 3100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5680 3100 30  0001 C CNN
 F 3 "" H 5750 3100 30  0000 C CNN
@@ -123,10 +100,10 @@ F 3 "" H 5750 3100 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R102
+L R R2
 U 1 1 58D80714
 P 9450 3100
-F 0 "R102" V 9530 3100 50  0000 C CNN
+F 0 "R2" V 9530 3100 50  0000 C CNN
 F 1 "R" V 9450 3100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 9380 3100 30  0001 C CNN
 F 3 "" H 9450 3100 30  0000 C CNN
@@ -151,23 +128,23 @@ Text Label 4000 2500 0    60   ~ 0
 TEENCY_RX
 Text Label 6550 3700 2    60   ~ 0
 I2C_SCLK
-Text Label 2200 3400 2    60   ~ 0
+Text Label 2200 3350 2    60   ~ 0
 I2C_SCLK
 Text Label 8550 3700 0    60   ~ 0
 I2C_DAT
-Text Label 2200 3550 2    60   ~ 0
+Text Label 2200 3500 2    60   ~ 0
 I2C_DAT
 Text Label 6550 3900 2    60   ~ 0
 AIO_0
-Text Label 2200 4150 2    60   ~ 0
+Text Label 2200 4100 2    60   ~ 0
 AIO_0
 Text Label 8550 3900 0    60   ~ 0
 AIO_1
-Text Label 2200 4000 2    60   ~ 0
+Text Label 2200 3950 2    60   ~ 0
 AIO_1
-Text Label 2200 3850 2    60   ~ 0
+Text Label 2200 3800 2    60   ~ 0
 AIO_2
-Text Label 2200 3700 2    60   ~ 0
+Text Label 2200 3650 2    60   ~ 0
 AIO_3
 Text Label 6550 4100 2    60   ~ 0
 AIO_2
@@ -184,15 +161,40 @@ NoConn ~ 4000 3250
 NoConn ~ 4000 3400
 NoConn ~ 4000 3550
 NoConn ~ 4000 3700
-NoConn ~ 3550 4700
-NoConn ~ 3350 4700
-NoConn ~ 3150 4700
-NoConn ~ 2950 4700
-NoConn ~ 2750 4700
+NoConn ~ 3550 4900
+NoConn ~ 3350 4900
+NoConn ~ 2950 4900
+NoConn ~ 2750 4900
 NoConn ~ 2200 2450
 NoConn ~ 2200 2750
 NoConn ~ 2200 2900
-NoConn ~ 2200 3100
+NoConn ~ 2200 3050
 Text Label 6550 4300 2    60   ~ 0
+GND
+$Comp
+L Teensy-3.2 U1
+U 1 1 58D95B37
+P 3150 3350
+F 0 "U1" H 3150 3400 60  0000 C CNN
+F 1 "Teensy-3.2" H 2975 4525 60  0000 C CNN
+F 2 "TeencyConverter:Teensy-32" H 2875 3025 60  0001 C CNN
+F 3 "" H 2875 3025 60  0001 C CNN
+	1    3150 3350
+	1    0    0    -1  
+$EndComp
+Text Label 3150 4900 3    60   ~ 0
+GND
+$Comp
+L CE_Header H1
+U 1 1 58DA1984
+P 7550 3300
+F 0 "H1" H 8250 2100 60  0000 C CNN
+F 1 "CE_Header" H 7550 4400 60  0000 C CNN
+F 2 "CE_Header:CE_Header" H 7150 3700 60  0001 C CNN
+F 3 "" H 7150 3700 60  0000 C CNN
+	1    7550 3300
+	1    0    0    -1  
+$EndComp
+Text Label 8550 3300 0    60   ~ 0
 GND
 $EndSCHEMATC

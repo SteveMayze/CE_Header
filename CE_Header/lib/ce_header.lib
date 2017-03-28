@@ -3,8 +3,8 @@ EESchema-LIBRARY Version 2.3
 #
 # CE_Header
 #
-DEF CE_Header U 0 40 Y Y 1 F N
-F0 "U" 700 -1200 60 H V C CNN
+DEF CE_Header H 0 40 Y Y 1 F N
+F0 "H" 700 -1200 60 H V C CNN
 F1 "CE_Header" 0 1100 60 H V C CNN
 F2 "" -400 400 60 H V C CNN
 F3 "" -400 400 60 H V C CNN

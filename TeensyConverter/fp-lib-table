@@ -1,2 +1,4 @@
 (fp_lib_table
+  (lib (name TeencyConverter)(type KiCad)(uri "$(KIPRJMOD)\\lib\\TeencyConverter.pretty")(options "")(descr ""))
+  (lib (name CE_Header)(type KiCad)(uri D:\pcbs\CE_Header\CE_Header\lib\CE_Header.pretty)(options "")(descr ""))
 )
