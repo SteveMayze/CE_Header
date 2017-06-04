@@ -58,8 +58,6 @@ F 3 "" H 5750 2500 60  0000 C CNN
 	1    5750 2500
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 2500 5950 2500
 Text Label 8550 3500 0    60   ~ 0
 3V3
 Text Label 5950 2600 0    60   ~ 0
@@ -110,10 +108,6 @@ F 3 "" H 9450 3100 30  0000 C CNN
 	1    9450 3100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6550 3100 5900 3100
-Wire Wire Line
-	8550 3100 9300 3100
 Text Label 8750 3100 0    60   ~ 0
 DEVICE_TX
 Text Label 10150 3100 2    60   ~ 0
@@ -126,12 +120,8 @@ Text Label 4000 2650 0    60   ~ 0
 TEENCY_TX
 Text Label 4000 2500 0    60   ~ 0
 TEENCY_RX
-Text Label 6550 3700 2    60   ~ 0
-I2C_SCLK
 Text Label 2200 3350 2    60   ~ 0
 I2C_SCLK
-Text Label 8550 3700 0    60   ~ 0
-I2C_DAT
 Text Label 2200 3500 2    60   ~ 0
 I2C_DAT
 Text Label 6550 3900 2    60   ~ 0
@@ -150,10 +140,6 @@ Text Label 6550 4100 2    60   ~ 0
 AIO_2
 Text Label 8550 4100 0    60   ~ 0
 AIO_3
-Wire Wire Line
-	5600 3100 5050 3100
-Wire Wire Line
-	9600 3100 10150 3100
 NoConn ~ 4000 2800
 NoConn ~ 4000 2950
 NoConn ~ 4000 3100
@@ -197,4 +183,62 @@ F 3 "" H 7150 3700 60  0000 C CNN
 $EndComp
 Text Label 8550 3300 0    60   ~ 0
 GND
+$Comp
+L R R3
+U 1 1 593430C7
+P 6150 3450
+F 0 "R3" V 6230 3450 50  0000 C CNN
+F 1 "4.7kΩ" V 6150 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 3450 30  0001 C CNN
+F 3 "" H 6150 3450 30  0000 C CNN
+	1    6150 3450
+	-1   0    0    1   
+$EndComp
+Text Label 5150 3700 0    60   ~ 0
+I2C_SCLK
+$Comp
+L R R4
+U 1 1 593431DC
+P 9000 3450
+F 0 "R4" V 9080 3450 50  0000 C CNN
+F 1 "4.7kΩ" V 9000 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8930 3450 30  0001 C CNN
+F 3 "" H 9000 3450 30  0000 C CNN
+	1    9000 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 2500 5950 2500
+Wire Wire Line
+	6550 3100 5900 3100
+Wire Wire Line
+	8550 3100 9300 3100
+Wire Wire Line
+	5600 3100 5050 3100
+Wire Wire Line
+	9600 3100 10150 3100
+Wire Wire Line
+	5150 3700 6550 3700
+Wire Wire Line
+	8550 3700 10150 3700
+Text Label 10150 3700 2    60   ~ 0
+I2C_DAT
+Wire Wire Line
+	6150 3600 6150 3700
+Connection ~ 6150 3700
+Wire Wire Line
+	9000 3700 9000 3600
+Connection ~ 9000 3700
+Text Label 5050 3250 0    60   ~ 0
+3V3
+Wire Wire Line
+	6150 3300 6150 3250
+Wire Wire Line
+	6150 3250 5050 3250
+Wire Wire Line
+	9000 3300 9000 3250
+Wire Wire Line
+	9000 3250 10150 3250
+Text Label 10150 3250 2    60   ~ 0
+3V3
 $EndSCHEMATC
