@@ -1,5 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:ce_header
+LIBS:SensorBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -57,7 +58,7 @@ F 3 "" H 2550 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D8
+L LED-RESCUE-SensorBoard D8
 U 1 1 58F371C8
 P 9300 3050
 F 0 "D8" H 9500 3100 50  0000 C CNN
@@ -90,7 +91,7 @@ F 3 "" H 9300 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D7
+L LED-RESCUE-SensorBoard D7
 U 1 1 58F375DE
 P 9100 3050
 F 0 "D7" H 9300 3100 50  0000 C CNN
@@ -112,7 +113,7 @@ F 3 "" H 9100 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D6
+L LED-RESCUE-SensorBoard D6
 U 1 1 58F376B0
 P 8900 3050
 F 0 "D6" H 9100 3100 50  0000 C CNN
@@ -134,7 +135,7 @@ F 3 "" H 8900 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D5
+L LED-RESCUE-SensorBoard D5
 U 1 1 58F376BF
 P 8700 3050
 F 0 "D5" H 8900 3100 50  0000 C CNN
@@ -156,7 +157,7 @@ F 3 "" H 8700 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D4
+L LED-RESCUE-SensorBoard D4
 U 1 1 58F3780A
 P 8500 3050
 F 0 "D4" H 8700 3100 50  0000 C CNN
@@ -178,7 +179,7 @@ F 3 "" H 8500 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D3
+L LED-RESCUE-SensorBoard D3
 U 1 1 58F37819
 P 8300 3050
 F 0 "D3" H 8500 3100 50  0000 C CNN
@@ -200,7 +201,7 @@ F 3 "" H 8300 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-SensorBoard D2
 U 1 1 58F37828
 P 8100 3050
 F 0 "D2" H 8300 3100 50  0000 C CNN
@@ -222,7 +223,7 @@ F 3 "" H 8100 3550 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-SensorBoard D1
 U 1 1 58F37837
 P 7900 3050
 F 0 "D1" H 8100 3100 50  0000 C CNN
