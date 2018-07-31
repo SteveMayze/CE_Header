@@ -1,4 +1,4 @@
-update=11/02/2018 21:01:40
+update=27/03/2017 21:42:18
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,14 +23,12 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=../CE_Header
+LibDir=
 [eeschema/libraries]
-LibName1=lib/ce_header
-LibName2=SensorBoard-rescue
+LibName1=D:/pcbs/CE_Header/CE_Header/lib/ce_header
+LibName2=lib/teensy-32
 LibName3=power
 LibName4=device
 LibName5=transistors
@@ -60,4 +58,5 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-LibName32=lib/SensorBoard
+[general]
+version=1
